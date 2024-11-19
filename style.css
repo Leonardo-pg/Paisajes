@@ -1,0 +1,375 @@
+*{ 
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+body{
+width: 100%;
+}
+
+
+.menu {
+        background-color:rgb(185, 59, 13,0.75);
+        width: 100%;
+        height: 10%;
+        padding: 15px;
+        border-radius: 5px;
+        display: flex;
+        align-items:center ;
+        justify-content: center;
+}
+
+
+.boton {
+    display:  inline-flex;
+    background-color: black;
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: white 2px solid;
+transition: 1s ease all;
+gap: 15px;
+    
+}
+
+.boton:hover{
+
+    background: red;
+    border-radius: 15px;
+    scale: 1.2;
+}
+
+
+span{
+    color: bisque;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    
+}
+
+
+ 
+.subir{
+   position: sticky;
+   width: 70px;
+   height: 70px;
+   top: 90%;
+   left: 90%;
+   background-color:rgba(163, 163, 11, 0.6);
+   border-radius: 50%;
+   font-size: 40px;
+   color:antiquewhite
+}
+
+
+.subir a:focus{
+  background-color: rgb(221, 33, 20);
+  border-radius:30px;
+  font-size: 50px;
+  color:antiquewhite;
+  
+    }
+    
+ 
+ 
+ 
+
+.titulo {
+    background:rgb(16, 17, 14,0.5);
+    border-radius: 10px;
+    font-family: "Doto";
+    font-size: 30px;
+    padding: 5%;
+    width: 100%;
+    height: 10%;
+    color: aliceblue;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: nowrap;
+   justify-content: center;
+    justify-items: flex-end;
+    
+}
+
+.paralax {
+    width: 100%;
+    height: 100vh;
+    background-image: url("Imagenes/hojas.jpg" );
+    background-position: center; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+    .paralax2 {
+        width: 100%;
+        height: 100vh;
+        background-image: url("Imagenes/hojas.jpg" );
+        background-position: center; 
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+}
+ .container{
+display: flex;
+margin-top: 10px;
+    width: 100%;
+    height: 50%;
+       
+ }
+
+.slider input{
+visibility: hidden;
+display: none;
+
+}
+
+.marcadores {
+position:absolute;
+width: 100%;
+display: flex;
+justify-content: center;
+bottom: 50px;
+gap: 10px;
+}
+
+.marcadores label{
+width: 20px;
+height: 20px;
+background-color: red;
+border: 1px black solid;
+opacity: 0.5;
+cursor: pointer;
+z-index: 1;
+transition: 300ms ease-in-out;
+
+}
+
+.marcadores label:hover{
+    scale: 1;
+    opacity: 1;
+}
+
+.slider input:nth-child(1):checked ~ .marcadores label:nth-child(1),
+.slider input:nth-child(2):checked ~ .marcadores label:nth-child(2),
+.slider input:nth-child(3):checked ~ .marcadores label:nth-child(3)
+{
+opacity: 1;
+scroll-margin: 1.2;
+width: 60px;
+
+}
+.content{
+position: relative;
+width: 300vw;
+display: flex;
+transition: 400ms ease-in-out;
+
+
+}
+
+.firstslider,.secondslider,.thirdslider{
+
+position: relative;
+width: 100vw;
+height: 34vw;
+justify-content: center;
+align-items: center;
+
+}
+
+.firstslider{
+
+    background-image:url(Imagenes/arbol.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.secondslider{
+    background-image:url(Imagenes/camino.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.thirdslider {
+    background-image:url(Imagenes/mar.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.slider input:nth-child(1):checked ~ .content{
+left: 0;
+}
+.slider input:nth-child(2):checked ~ .content{
+    left:-100vw;
+    }
+
+    .slider input:nth-child(3):checked ~ .content{
+        left:-200vw;
+        }
+    
+
+  h2{
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+   
+.texto1 { 
+    display: flex;
+    overflow:hidden;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    margin:20px;
+    padding:30px;
+    gap: 20px;
+    
+
+}
+
+
+
+h3{
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+
+
+.mediano{
+    height:450px ;
+    background-image: url("Imagenes/esferavidrio.jpg");
+    background-position: center; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-items: center;
+}
+.texto2 {
+    background:rgb(16, 17, 14,0.5);
+    border-radius: 10px;
+    padding: 20px;
+    width: 80%px;
+    height: 300px;
+    color: aliceblue;
+    overflow: hidden;
+    margin:10px;
+
+}
+
+
+  
+.titulo-formulario{
+    background-color: rgb(28, 26, 26,0.20);
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+
+    .formulario-contacto{
+        display: grid;
+        grid-template-rows:repeat (3 1fr);
+        align-items: center;
+        width: 80%;
+        background-color: rgb(28, 26, 26,0.20);
+        font-size: large;
+
+}
+
+
+
+
+.controls{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 15px;
+    gap: 10px;
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: aquamarine;
+}
+
+
+
+.form{
+    background-color: chocolate;
+    color: antiquewhite;
+    padding: 5px;
+    border-radius: 5px;
+    gap: 20px;
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+p{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.galeria{
+    display: flex;
+    width: 100%;
+    height: 80%;
+    margin-top: 10px;
+    justify-content: baseline;
+   }
+
+   .galeria img{
+   width: 0px;
+   flex-grow: 1;
+   object-fit: cover;
+   opacity: 0,8;
+   transition: 5s ease;
+   
+   }
+   
+   .galeria img:hover{
+   
+       cursor: crosshair;
+       width: 300px;
+       opacity: 1;
+   }
+
+.titulo2 {
+ text-align: center;
+ font-family: Arial, Helvetica, sans-serif;
+ font-size: 50px;
+ color: bisque;
+
+}
+
+.pie{
+
+width: 100%;
+height: 40%;
+margin: 1px;
+    background-color: black;
+    color: blanchedalmond;
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 15%;
+
+}
+.iconosredes img{
+width: 30px;
+height: 30px;
+
+}
+
